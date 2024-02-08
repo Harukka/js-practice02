@@ -14,9 +14,6 @@ body{
 
 }
 #game-board{
-    --grid-size: 4;
-    --cell-size: 20vmin;
-    --cell-gap: 2vmin;
     display: grid;
     grid-template-columns: repeat(var(--grid-size), var(--cell-size));
     grid-template-rows: repeat(var(--grid-size), var(--cell-size));
@@ -32,10 +29,10 @@ body{
     border-radius: 1vmin;
 }
 .tile{
-    --x: 1;
+    /* --x: 1;
     --y: 2;
     --background-lightness: 20%;
-    --text-lightness: 80%;
+    --text-lightness: 80%; */
     position: absolute;
     display: flex;
     justify-content: center;
@@ -55,7 +52,7 @@ body{
 
 @keyframes show {
     0%{
-        opacity: 0.5;
+        opacity: .5;
         transform: scale(0);
     }
     
